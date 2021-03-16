@@ -31,7 +31,10 @@ $captcha->setSize(150, 45)
 ### 比對使用者輸入驗證碼是否正確
 
 ```php
-if($captcha->verify("使用者輸入內容") === true){
+$is_valid = $captcha->verify("使用者輸入內容");//Case-insensitive
+$is_valid = $captcha->verify("使用者輸入內容", true);//Case-sensitive
+
+if($is_valid === true){
     ...
 }
 ```
