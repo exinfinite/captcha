@@ -1,4 +1,4 @@
-# 驗證碼
+# 驗證碼使用
 
 ## 安裝
 
@@ -13,11 +13,20 @@ composer require exinfinite/captcha
 ```php
 use Exinfinite\Captcha\Builder;
 $captcha = new Builder();
-$captcha->setSize(120, 45)
+
+//使用預設值產生
+$captcha->build();
+
+//自訂參數
+$captcha->setSize(150, 45)
         ->setLine(6)
         ->setPixel(180)
         ->build();
 ```
+
+> ![](https://github.com/exinfinite/captcha/blob/main/sample/1.png)
+> ![](https://github.com/exinfinite/captcha/blob/main/sample/2.png)
+> ![](https://github.com/exinfinite/captcha/blob/main/sample/3.png)
 
 ### 比對使用者輸入驗證碼是否正確
 
