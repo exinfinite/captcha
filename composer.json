@@ -1,0 +1,29 @@
+{
+	"name": "exinfinite/captcha",
+	"description": "php captcha",
+	"version": "1.0.0",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Exinfinite Chen",
+			"email": "chen.min.home@gmail.com",
+			"role": "Developer"
+		}
+	],
+	"config": {
+		"process-timeout": 1800,
+		"vendor-dir": "vendor",
+		"optimize-autoloader": true,
+		"sort-packages": true
+	},
+	"minimum-stability": "stable",
+	"autoload": {
+		"psr-4": {
+			"Exinfinite\\Captcha\\": "src/"
+		}
+	},
+	"require": {
+		"php": "~5.6.0"
+	}
+}
